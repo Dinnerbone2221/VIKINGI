@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru" class="rockets-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ошибка 404 - Викинги</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ВИКИНГИ ⚔️</h1>
+            <p>Ракеты викингов 🚀</p>
+        </header>
+        
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="history.html">История</a>
+            <a href="ships.html">Корабли</a>
+            <a href="gods.html">Боги</a>
+            <a href="discoveries.html">Открытия</a>
+            <a href="rockets.html">Ракеты</a>
+        </nav>
+        
+        <div class="content">
+            <div class="error-container">
+                <div class="error-code">404</div>
+                <h2 class="error-message">🚀 УПС! РАКЕТЫ ВИКИНГОВ НЕ НАЙДЕНЫ! 🚀</h2>
+                <p class="error-description">
+                    Кажется, викинги не успели изобрести ракеты! Они были великими мореплавателями, 
+                    но космос им покорить не удалось. Может быть, они пытались запустить драккар в космос? 🤔
+                </p>
+                
+                <div class="float">🚀💫</div>
+                
+                <p class="error-description">
+                    <strong>Интересный факт:</strong> Викинги жили в 8-11 веках, а первая ракета была запущена 
+                    только в 20 веке. Так что у них просто не было времени на космические программы! 😄
+                </p>
+                
+                <div class="error-buttons">
+                    <a href="index.html" class="error-button">🏠 Вернуться на главную</a>
+                    <a href="ships.html" class="error-button">⛵ Посмотреть корабли</a>
+                    <a href="history.html" class="error-button">📜 Изучить историю</a>
+                </div>
+                
+                <p style="margin-top: 30px; color: #888; font-style: italic;">
+                    PS: Может быть, викинги и не летали в космос, но они открыли Америку за 500 лет до Колумба! 🌍
+                </p>
+            </div>
+        </div>
+        
+        <footer>
+            <h3>Сайт о викингах</h3>
+            <p>© 2026 | Ошибка 404 - ракет не найдено 🚫</p>
+            <p class="footer-note">Шуточная страница для школьного проекта</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const errorCode = document.querySelector('.error-code');
+            const floatElement = document.querySelector('.float');
+            
+            setTimeout(() => {
+                errorCode.classList.add('shake');
+            }, 1000);
+            
+            setInterval(() => {
+                errorCode.classList.remove('shake');
+                setTimeout(() => {
+                    errorCode.classList.add('shake');
+                }, 50);
+            }, 5000);
+            
+            setTimeout(() => {
+                floatElement.style.display = 'block';
+                floatElement.style.fontSize = '60px';
+                floatElement.style.textAlign = 'center';
+                floatElement.style.margin = '30px auto';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
